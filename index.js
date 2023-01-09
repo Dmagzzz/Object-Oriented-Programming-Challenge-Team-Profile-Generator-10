@@ -1,7 +1,7 @@
-const inquirer = require ('inquirer')
-const Engineer = require ('./Engineer')
-const Manager = require ('./Manager')
-const Intern = require ('./Intern')
+const inquirer = require('inquirer')
+const Engineer = require('./engineer')
+const Manager = require('./manager')
+const Intern = require('./intern')
 
 const team =[];
 

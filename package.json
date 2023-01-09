@@ -1,0 +1,23 @@
+{
+  "name": "hw10",
+  "version": "1.0.0",
+  "description": "Module 10 Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmagzzz/Hw10.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmagzzz/Hw10/issues"
+  },
+  "homepage": "https://github.com/Dmagzzz/Hw10#readme",
+  "dependencies": {
+    "inquirer": "^8.2.5"
+  }
+}
