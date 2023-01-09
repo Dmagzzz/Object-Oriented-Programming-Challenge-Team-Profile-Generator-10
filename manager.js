@@ -9,7 +9,7 @@ class Manager extends Employee {
     }
 
     getRole() {
-        return 'engineer';
+        return 'manager';
     }
 
     getGithub() {

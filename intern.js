@@ -9,7 +9,7 @@ class Intern extends Employee {
     }
 
     getRole() {
-        return 'engineer';
+        return 'intern';
     }
 
     getGithub() {

@@ -1,7 +1,10 @@
+const path = require("path");
+const fs = require("fs");
 const inquirer = require('inquirer')
 const Engineer = require('./engineer')
 const Manager = require('./manager')
 const Intern = require('./intern')
+const generateHtml = require('./generateHtml')
 
 const team =[];
 
@@ -14,8 +17,11 @@ function askEmployee() {
         if (answers.newEmployee=='engineer'){
             createEngineer()
         }
-        if (answers.newEmployee=='intern'){
+        else if (answers.newEmployee=='intern'){
             createIntern()
+        } else{
+            fs.writeFileSync('index.html', generateHtml(team), "utf-8");
+
         }
     })
 }
@@ -47,22 +53,23 @@ inquirer.prompt ([
         answers.name, answers.id, answers.email, answers.officeNumber, 
     )
     team.push(manager);
+    askEmployee()
 }) 
 function createEngineer() {
     inquirer.prompt([
         {
             name: 'name',
-            message:'Please enter managers name.',
+            message:'Please enter engineers name.',
             type: 'input',
         },
         {
             name: 'id',
-            message: 'Please enter managers ID',
+            message: 'Please enter engineers ID',
             type: 'input',
         },
         {
             name: 'email',
-            message: 'Please enter managers email',
+            message: 'Please enter engineers email',
             type: 'input',
         },
         {
@@ -76,28 +83,29 @@ function createEngineer() {
             answers.name, answers.id, answers.email, answers.gitHub, 
         )
         team.push(engineer);
+        askEmployee()
     }) 
 }
 function createIntern() {
     inquirer.prompt([
         {
             name: 'name',
-            message:'Please enter managers name.',
+            message:'Please enter interns name.',
             type: 'input',
         },
         {
             name: 'id',
-            message: 'Please enter managers ID',
+            message: 'Please enter interns ID',
             type: 'input',
         },
         {
             name: 'email',
-            message: 'Please enter managers email',
+            message: 'Please enter interns email',
             type: 'input',
         },
         {
             name: 'school',
-            message: 'Please enter your github username',
+            message: 'Please enter your school name',
             type: 'input',
         }
     ])
@@ -106,5 +114,6 @@ function createIntern() {
             answers.name, answers.id, answers.email, answers.school, 
         )
         team.push(intern);
+        askEmployee()
     }) 
 }
