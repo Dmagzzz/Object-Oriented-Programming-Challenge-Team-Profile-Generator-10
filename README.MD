@@ -47,7 +47,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## Link to deployed app
 
-* 
+* https://dmagzzz.github.io/Object-Oriented-Programming-Challenge-Team-Profile-Generator-10/
 
 ## Questions
 
