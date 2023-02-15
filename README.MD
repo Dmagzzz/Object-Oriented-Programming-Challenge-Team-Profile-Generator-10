@@ -39,7 +39,8 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## Walkthrough video link
 
-* ----
+* https://drive.google.com/file/d/12M6FoUqrk7jVfO6I6QBErYlO0uydJICV/view
+just needed to type in correct info and it will work!
 
 
 ## Screenshots
